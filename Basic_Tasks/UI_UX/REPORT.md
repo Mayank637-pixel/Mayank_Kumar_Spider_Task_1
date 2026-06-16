@@ -1,4 +1,7 @@
 # Spider Inductions '26 - UI/UX Basic Task
+# Details
+**Name**: Mayank Kumar **Roll_no**:114125062
+# Task Details
 **Task:** Music Streaming Landing Page
 **App Name:** [EchoMusic]
 

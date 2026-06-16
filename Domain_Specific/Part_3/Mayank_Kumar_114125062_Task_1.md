@@ -59,7 +59,6 @@ afl-clang-lto -fsanitize=address,fuzzer -I../libarchive harness.c -L./libarchive
 ### Step 8: Creating the Seed Corpus
 Feeding a fuzzer random data results in wasted runs. For example, a ZIP file must start with the magic bytes `PK`. If AFL++ guesses randomly, it takes forever just to find `PK`.
 
-**The Golden Rule: Small + Valid = Deep Coverage.**
 
 I created a small text file (`echo hello > sample/a.txt`) and zipped it into a valid `.tar` and `.zip` file. By providing AFL++ with these valid files to begin with, the fuzzer skipped the pointless "Invalid File" checks. It immediately started altering the complex internal archive structures.
 
@@ -83,16 +82,7 @@ Although I did not find a zero-day crash in 41 minutes, the campaign demonstrate
 - **Coverage:** AFL++ effectively used my `.zip` and `.tar` seeds to discover new code paths.
 
 
-### Step 11: Lessons Learned
-I improved my skills in:
-- Finding the attack surface in large open-source codebases.
-- Writing a fast, memory-safe C harness from scratch.
-- Using `cmake` and `make` to build third-party libraries.
-- Using ASAN (`-fsanitize=address`) to catch hidden memory corruption.
-- Showing that smart seed creation significantly increases fuzzer speed.
-
-
-### Step 12: Future Improvements
+### Step 11: Future Improvements
 To scale this up, I would:
 - Run the fuzzer for several days.
 - Add more complex formats like `7z` and `CPIO` into the seed corpus.

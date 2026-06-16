@@ -1,0 +1,34 @@
+[2026-06-09 11:39:05] [INFO] Vault Sweep Started 
+[2026-06-09 11:39:05] [INFO] Scanning test_project/b.sh 
+[2026-06-09 11:39:05] [WARN] test_project/b.sh contain dengerous command mkfs  
+[2026-06-09 11:39:05] [WARN] test_project/b.sh contains curl | sh 
+[2026-06-09 11:39:05] [INFO] Scanning test_project/dangerous.sh 
+[2026-06-09 11:39:05] [WARN] test_project/dangerous.sh contain dengerous command rm -rf  
+[2026-06-09 11:39:05] [INFO] Scanning test_project/scripts/c.sh 
+[2026-06-09 11:39:05] [WARN] test_project/scripts/c.sh contain dengerous command mkfs  
+[2026-06-09 11:39:05] [INFO] Scanning test_project/a.sh 
+[2026-06-09 11:39:05] [WARN] test_project/a.sh contain dengerous command shutdown  
+[2026-06-09 11:39:05] [WARN] test_project/a.sh contain dengerous command rm -rf  
+[2026-06-09 11:39:05] [WARN] test_project/a.sh contain dengerous command reboot  
+[2026-06-09 11:39:05] [INFO] Processing env file test_project/.env 
+[2026-06-09 11:39:05] [SKIP] Rejected: PASSWORD=mysecretpassword 
+[2026-06-09 11:39:05] [SKIP] Rejected: TOKEN=abcd1234 
+[2026-06-09 11:39:05] [SKIP] Rejected: JWT_SECRET=xyz123 
+[2026-06-09 11:39:05] [SKIP] Rejected: PATH=/tmp 
+[2026-06-09 11:39:26] [INFO] Vault Sweep Started 
+[2026-06-09 11:39:26] [INFO] Scanning test_project/b.sh 
+[2026-06-09 11:39:26] [WARN] test_project/b.sh contain dengerous command mkfs  
+[2026-06-09 11:39:26] [WARN] test_project/b.sh contains curl | sh 
+[2026-06-09 11:39:26] [INFO] Scanning test_project/dangerous.sh 
+[2026-06-09 11:39:26] [WARN] test_project/dangerous.sh contain dengerous command rm -rf  
+[2026-06-09 11:39:26] [INFO] Scanning test_project/scripts/c.sh 
+[2026-06-09 11:39:26] [WARN] test_project/scripts/c.sh contain dengerous command mkfs  
+[2026-06-09 11:39:26] [INFO] Scanning test_project/a.sh 
+[2026-06-09 11:39:26] [WARN] test_project/a.sh contain dengerous command shutdown  
+[2026-06-09 11:39:26] [WARN] test_project/a.sh contain dengerous command rm -rf  
+[2026-06-09 11:39:26] [WARN] test_project/a.sh contain dengerous command reboot  
+[2026-06-09 11:39:26] [INFO] Processing env file test_project/.env 
+[2026-06-09 11:39:26] [SKIP] Rejected: PASSWORD=mysecretpassword 
+[2026-06-09 11:39:26] [SKIP] Rejected: TOKEN=abcd1234 
+[2026-06-09 11:39:26] [SKIP] Rejected: JWT_SECRET=xyz123 
+[2026-06-09 11:39:26] [SKIP] Rejected: PATH=/tmp 
